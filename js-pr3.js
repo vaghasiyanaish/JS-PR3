@@ -22,24 +22,21 @@
 
 //q.3 Armstrong number of given number
 
-// let numb = 750, v = 1;
+let num=153;
+let sum=0;
+let data=num;
 
-// do {
-//     let sums = 0, temp = v, digits = 0, n = v;
-
-//     do { digits++; n = (n - n % 10) / 10; } while (n);
-
-//     do {
-//         let d = temp % 10, p = 1, j = digits;
-//         do { p *= d; j--; } while (j);
-//         sums += p;
-//         temp = (temp - temp % 10) / 10;
-//     } while (temp);
-
-//     if (sums === v) console.log(v);
-
-//     v++;
-// } while (v <= numb);
+while(num !=0){
+    let rem=num%10;
+    sum+=rem**3;
+    num=Math.floor(num/10);
+}
+console.log(sum);
+if(data==sum){
+    console.log("atmstrong number");
+}else{
+    console.log("not an armstrong number");
+}
 
 
 //q.4 Palindrone number of given number
