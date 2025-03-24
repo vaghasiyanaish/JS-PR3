@@ -22,45 +22,41 @@
 
 //q.3 Armstrong number of given number
 
+// let num=153;
+// let sum=0;
+// let data=num;
+
+// while(num !=0){
+//     let rem=num%10;
+//     sum=sum+rem**3;
+//     num=Math.floor(num/10);
+// }
+// console.log(sum);
+// if(data==sum){
+//     console.log("atmstrong number");
+// }else{
+//     console.log("not an armstrong number");
+// }
+
+
+//q.4 Palindrone number of given number
+
 let num=153;
 let sum=0;
 let data=num;
 
 while(num !=0){
     let rem=num%10;
-    sum+=rem**3;
+    sum=(10*sum)+rem;
     num=Math.floor(num/10);
 }
 console.log(sum);
 if(data==sum){
-    console.log("atmstrong number");
+    console.log("palindrone number");
 }else{
-    console.log("not an armstrong number");
+    console.log("not an palindrone number");
 }
 
-
-//q.4 Palindrone number of given number
-
-// let q = 300;  
-// let w = 1;
-
-// while (w <= q) {
-//     let o = w;
-//     let r = 0;
-//     let t = w;
-
-//     while (t > 0) {
-//         let d = t % 10;
-//         r = r * 10 + d;
-//         t = (t - (t % 10)) / 10;  
-//     }
-
-//     if (o === r) {
-//         console.log(w);
-//     }
-
-//     w++;
-// }
 
 
 
